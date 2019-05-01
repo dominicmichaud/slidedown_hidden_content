@@ -1,0 +1,158 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hidden-progress-bar{
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 4px;
+	background: #232323;
+	-webkit-transition: width .45s ease-in-out;
+  	-moz-transition: width .45s ease-in-out;
+  	-o-transition: width .45s ease-in-out;
+  	transition: width .45s ease-in-out;
+}
+
+.hidden-progress-bar.active{
+	width: 100%;
+}
+
+.hidden-content-container{
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #232323;
+	-webkit-transition: height .45s ease-in-out .50s;
+	-moz-transition: height .45s ease-in-out .50s;
+	-o-transition: height .45s ease-in-out .50s;
+	transition: height .45s ease-in-out .50s;
+}
+
+.hidden-content-container.opened{
+	height: 100%;
+}
+
+.hidden-content-container .close-btn{
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 25px;
+    margin-right: 25px;
+    padding: 18px;
+    background: #383838;
+    border-radius: 35px;
+    line-height: 1px;
+    font-size: 1.25rem;
+    -webkit-transition: all .45s ease-in-out;
+	-moz-transition: all .45s ease-in-out;
+	-o-transition: all .45s ease-in-out;
+	transition: all .45s ease-in-out;
+	cursor: pointer;
+	display: none;
+	opacity: 0;
+}
+
+.hidden-content-container .close-btn:hover{
+	background: #5B5B5B;
+}
+
+.hidden-content-container .outer-container{
+	display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden-content-container .outer-container .inner-container{
+	display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hidden-content-container .outer-container .inner-container .text-container{
+	color: #FFF;
+	display: none;
+	opacity: 0;
+}
+
+.hidden-content-container .outer-container .inner-container .text-container h1{
+	margin-bottom: 15px;
+}
+
+.hidden-content-container .outer-container .inner-container .text-container p{
+	line-height: 1.45;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.banner img{
+	width: 100%;
+	height: auto;
+}
+
+.content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+p{
+	margin-bottom: 15px; 
+}
+
+.btn{
+	padding: 10px 70px;
+}
